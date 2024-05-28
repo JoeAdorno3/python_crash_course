@@ -10,3 +10,16 @@ for pizza in pizza_list:
 
 print("\nThere are so many great kinds of pizza!")
 
+friend_pizza = pizza_list[:]
+
+pizza_list.append('neapolitan pizza')
+
+friend_pizza.append('detroit style')
+
+print("My favorite pizzas are:")
+for pizza in pizza_list[0:4]: 
+    print(pizza)
+    
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizza[0:4]: 
+    print(pizza)
