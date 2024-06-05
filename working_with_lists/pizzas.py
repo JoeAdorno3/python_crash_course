@@ -23,3 +23,6 @@ for pizza in pizza_list[0:4]:
 print("My friend's favorite pizzas are:")
 for pizza in friend_pizza[0:4]: 
     print(pizza)
+print("My friend's favorite pizzas are:")
+for pizza in friend_pizza[:len(friend_pizza) + 1]: 
+    print(pizza)
