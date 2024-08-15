@@ -1,18 +1,20 @@
 # using a dictionary to store people's favorite numbers
 
 favorite_numbers = {
-	'Joe': 42,
-	'Jim C': 23,
-	'Barack': 44,
-	'Gabe Newell': 3,
-	'Aliens Franchise': 2,
+	'Joe': [42, 22, 45], 
+	'Jim C': [23, 99, 69],
+	'Barack': [44, 99, 100],
+	'Gabe Newell': [3, 5, 7, 9],
+	'Aliens Franchise': [2],
 }
+# printing out peoples favorite numbers
 
-print("These are some favorite numbers from people:")
-print(f"Joe's favorite number is {favorite_numbers['Joe']}")
-print(f"Jim Carrey's favorite number is {favorite_numbers['Jim C']}")
-print(f"Barack's favorite number is {favorite_numbers['Barack']}")
-print(f"Gabe Newell's favorite number is {favorite_numbers['Gabe Newell']}")
-print(f"The Aliens Franchise's favorite number is {favorite_numbers['Aliens Franchise']}")
+for  k,v in favorite_numbers.items():
+	print(f"\n{k}'s favorite numbers are:")
+	if len(v) > 1:
+		for i in v:
+			print(f"{i}")
+	else:
+		print(f"{v[0]}")
 
 
